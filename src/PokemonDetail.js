@@ -26,9 +26,11 @@ class PokemonDetail extends React.Component {
 
           <h4>Abilities:</h4>
           {this.state.abilities.map((ability) => (
-            <p>
-              {ability.name} {ability.text}
-            </p>
+            <React.Fragment>
+              <p>Ability Name: {ability.name}</p>
+              <p>Description: {ability.text}</p>
+              ------
+            </React.Fragment>
           ))}
         </React.Fragment>
       );
