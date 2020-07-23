@@ -72,16 +72,19 @@ class App extends React.Component {
     if (this.state.loaded) {
       return (
         <Router>
+          <img id="title-image" alt="title" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" />
           <nav id="nav-bar">
                 <Link id="pokemon-list-btn" to="/pokemons">Pokemons</Link><Link id="type-list-btn" to="/types">Types</Link>
           </nav>
           <Switch>
             <Redirect exact from="/" to="/pokemons" />
             <Route exact path="/pokemons">
+              <div id="pokemon-container">
               <PokemonList offset={this.state.offset}
                            pokemons={this.state.pokemons}
                            getPrev20={this.handleGetPrev20}
-                           getNext20={this.handleGetNext20}/>
+                           getNext20={this.handleGetNext20}/> 
+              </div>
             </Route>
             <Route exact path="/types">
               <TypeList />

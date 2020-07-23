@@ -9,7 +9,7 @@ class PokemonList extends React.Component {
     return (
       <React.Fragment>
         <h1>Pokemons</h1>
-        <ul>
+        <ul style={{textAlign: "center"}}>
           {this.props.pokemons.map(this.mapPokemonToListItem)}
         </ul>
         {prevButton}
@@ -20,7 +20,7 @@ class PokemonList extends React.Component {
 
   mapPokemonToListItem(pokemon) {
     return (
-      <li key={pokemon.url}>
+      <li style={{display: "inline-block"}} key={pokemon.url}>
         <Link to={`/pokemons/${pokemon.id}`}>
           <img alt="pokemonListItem" src={pokemon.image_url}/>
           {pokemon.name}
