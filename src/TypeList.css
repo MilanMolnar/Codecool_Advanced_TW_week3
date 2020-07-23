@@ -12,14 +12,21 @@
     position: absolute;
     margin-top:220px;
     list-style: none;
+    padding: 0px 0px 0px 20px;
     width: 940px;
     margin-left: calc(50% - (490px));
     height: 330px;
     padding-top: 20px;
+    border-top: solid;
+    border-left: solid;
+    border-width: 3px;
+    border-color:hsl(203, 58%, 38%);
     
 }
 
 #li-type{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
     margin: 5px;
     width: 165px;
     height:60px;
@@ -32,11 +39,15 @@
     color: #ffd300;
     transition-duration: 0.6s;
     cursor: default;
+    text-align: center;
     
 }
 
 #li-type:hover{
-    background-color:#296d98; ;
+    background-color:#296d98; 
+    width: 195px;
+    height:70px;
+    
 }
 
 #types-title{
@@ -45,7 +56,7 @@
 
 #type-name{
     font-family: 'Pokemon-solid';
-    margin-left: 50px;
+    margin-left: px;
     margin-top: 3px;
     font-size: 20px;
 }

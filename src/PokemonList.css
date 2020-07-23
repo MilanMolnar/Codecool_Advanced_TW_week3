@@ -10,8 +10,8 @@
 
 #poke-item{
     margin: 5px;
-    width: 300px;
-    height:120px;
+    width: 30em;
+    height:130px;
     text-align: center;
     border-style: solid;
     font-family: 'Pokemon-solid';
@@ -19,11 +19,13 @@
     border-radius: 10px;
     border-color: #296d98;
     background-color: #3792cb;
-    transition-duration:2s ;
+    transition-duration:.6s ;
 }
 
 #poke-item:hover{
     background-color:  #296d98;
+    width: 33em;
+    height:150px;
 }
 
 #poke-name{
@@ -31,9 +33,10 @@
     color: #ffd300;
     text-decoration: none;
     margin-top: -30px;
-    margin-left: 120px;
-
+    margin-left: 200px;
 }
+
+
 
 #next-btn{
     font-family: 'Pokemon-solid';
