@@ -1,0 +1,75 @@
+@font-face{
+    font-family: "Pokemon-hollow";
+    src:url('Pokemon\ Hollow.ttf');
+}
+
+@font-face{
+    font-family: "Pokemon-solid";
+    src:url('Pokemon\ Solid.ttf');
+}
+
+#poke-item{
+    margin: 5px;
+    width: 300px;
+    height:120px;
+    text-align: center;
+    border-style: solid;
+    font-family: 'Pokemon-solid';
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #3792cb;
+    background-color: #296d98;
+    transition-duration:2s ;
+}
+
+#poke-item:hover{
+    background-color:  #3792cb;
+}
+
+#poke-name{
+    position: absolute;
+    color: #ffd300;
+    text-decoration: none;
+    margin-top: -30px;
+    margin-left: 120px;
+
+}
+
+#next-btn{
+    font-family: 'Pokemon-solid';
+    border-color: #3792cb;
+    background-color: #296d98;
+    color: #ffd300;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width:100px;
+    height:calc(50px);
+    margin-left:calc(50% + 50px);
+    float: bottom;
+    transition-duration:2s;
+}
+
+#prev-btn{
+    font-family: 'Pokemon-solid';
+    border-color: #3792cb;
+    background-color: #296d98;
+    color: #ffd300;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    margin-left:calc(50% - (110px));
+    position: absolute; 
+    width:100px;
+    height:50px;
+    float: bottom;
+    transition-duration:2s;
+}
+
+#prev-btn:hover{
+    background-color: #3792cb;
+}
+
+#next-btn:hover{
+    background-color: #3792cb;
+}

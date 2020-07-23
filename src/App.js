@@ -53,19 +53,19 @@ class App extends React.Component {
   }
 
   handleGetNext20() {
-    const offset = this.state.offset + 20;
+    const offset = this.state.offset + 8;
     this.fetchPokemons(offset);
     this.setState({offset});
   }
 
   handleGetPrev20() {
-    const offset = this.state.offset - 20;
+    const offset = this.state.offset - 8 ;
     this.fetchPokemons(offset);
     this.setState({offset});
   }
 
   fetchPokemons(offset) {
-    axios.get(`https://pokeapi.co/api/v2/pokemon?offset=${offset}`).then(this.handlePokemonListResponse)
+    axios.get(`https://pokeapi.co/api/v2/pokemon?limit=8&offset=${offset}`).then(this.handlePokemonListResponse)
   }
 
   render() {
@@ -83,7 +83,7 @@ class App extends React.Component {
               <PokemonList offset={this.state.offset}
                            pokemons={this.state.pokemons}
                            getPrev20={this.handleGetPrev20}
-                           getNext20={this.handleGetNext20}/> 
+                           getNext20={this.handleGetNext20}/>
               </div>
             </Route>
             <Route exact path="/types">

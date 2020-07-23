@@ -48,6 +48,7 @@ html,body{
 
 #type-list-btn{
         border-color: #296d98;
+        border-width: 1px;
         background-color: #3792cb;
         color: #ffd300;
         font-style: bold;
@@ -72,7 +73,8 @@ html,body{
 }
 
 #pokemon-container{
-    margin-top: 150px;
+    margin-left: -50px;
+    margin-top: 200px;
     position: absolute;
 }
 
