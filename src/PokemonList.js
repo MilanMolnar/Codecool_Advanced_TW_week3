@@ -6,15 +6,15 @@ class PokemonList extends React.Component {
   render() {
     const prevButton = this.props.offset === 0
       ? <React.Fragment/>
-      : <button id="prev-btn" onClick={this.props.getPrev20}>Prev 20</button>;
+      : <button id="prev-btn" onClick={this.props.getPrev20}>Prev 8</button>;
     return (
       <React.Fragment>
-        <ul style={{textAlign: "center"}}>
+        <ul id="poke-ul" style={{textAlign: "center"}}>
           {this.props.pokemons.map(this.mapPokemonToListItem)}
           
         </ul>
         {prevButton}
-        <button id="next-btn" onClick={this.props.getNext20}>Next 20</button>
+        <button id="next-btn" onClick={this.props.getNext20}>Next 8</button>
       </React.Fragment>
     );
   }

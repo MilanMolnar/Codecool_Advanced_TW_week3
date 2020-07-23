@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './TypeList.css';
 
 class TypeList extends React.Component {
     constructor(props) {
@@ -18,8 +19,7 @@ class TypeList extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Types</h1>
-        <ul>
+        <ul id="ul-types">
           {this.state.types.map(this.mapTypeToListItem)}
         </ul>
       </React.Fragment>
@@ -28,8 +28,8 @@ class TypeList extends React.Component {
 
   mapTypeToListItem(type) {
     return (
-      <li key={type.url}>
-        {type.name}
+      <li id="li-type" key={type.url}>
+        <p id="type-name">{type.name}</p>
       </li>
     )
   }

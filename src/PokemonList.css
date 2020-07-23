@@ -17,13 +17,13 @@
     font-family: 'Pokemon-solid';
     border-width: 2px;
     border-radius: 10px;
-    border-color: #3792cb;
-    background-color: #296d98;
+    border-color: #296d98;
+    background-color: #3792cb;
     transition-duration:2s ;
 }
 
 #poke-item:hover{
-    background-color:  #3792cb;
+    background-color:  #296d98;
 }
 
 #poke-name{
@@ -37,8 +37,8 @@
 
 #next-btn{
     font-family: 'Pokemon-solid';
-    border-color: #3792cb;
-    background-color: #296d98;
+    border-color: #296d98;
+    background-color: #3792cb;
     color: #ffd300;
     border-style: solid;
     border-width: 2px;
@@ -52,8 +52,8 @@
 
 #prev-btn{
     font-family: 'Pokemon-solid';
-    border-color: #3792cb;
-    background-color: #296d98;
+    border-color: #296d98;
+    background-color: #3792cb;
     color: #ffd300;
     border-style: solid;
     border-width: 2px;
@@ -67,9 +67,10 @@
 }
 
 #prev-btn:hover{
-    background-color: #3792cb;
+    background-color: #296d98;;
 }
 
 #next-btn:hover{
-    background-color: #3792cb;
+    background-color: #296d98;;
 }
+
