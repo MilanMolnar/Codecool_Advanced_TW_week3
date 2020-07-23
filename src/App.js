@@ -33,6 +33,8 @@ class App extends React.Component {
       id: response.data.id,
       name: response.data.name,
       image_url: response.data.sprites.front_default,
+      abilities: response.data.abilities
+
     };
   }
 

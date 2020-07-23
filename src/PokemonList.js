@@ -11,6 +11,7 @@ class PokemonList extends React.Component {
         <h1>Pokemons</h1>
         <ul>
           {this.props.pokemons.map(this.mapPokemonToListItem)}
+          
         </ul>
         {prevButton}
         <button onClick={this.props.getNext20}>Next 20</button>
