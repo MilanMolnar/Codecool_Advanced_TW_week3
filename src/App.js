@@ -55,35 +55,38 @@ class App extends React.Component {
   }
 
   handleGetNext20() {
-    const offset = this.state.offset + 20;
+    const offset = this.state.offset + 8;
     this.fetchPokemons(offset);
     this.setState({offset});
   }
 
   handleGetPrev20() {
-    const offset = this.state.offset - 20;
+    const offset = this.state.offset - 8 ;
     this.fetchPokemons(offset);
     this.setState({offset});
   }
 
   fetchPokemons(offset) {
-    axios.get(`https://pokeapi.co/api/v2/pokemon?offset=${offset}`).then(this.handlePokemonListResponse)
+    axios.get(`https://pokeapi.co/api/v2/pokemon?limit=8&offset=${offset}`).then(this.handlePokemonListResponse)
   }
 
   render() {
     if (this.state.loaded) {
       return (
         <Router>
+          <img id="title-image" alt="title" src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" />
           <nav id="nav-bar">
                 <Link id="pokemon-list-btn" to="/pokemons">Pokemons</Link><Link id="type-list-btn" to="/types">Types</Link>
           </nav>
           <Switch>
             <Redirect exact from="/" to="/pokemons" />
             <Route exact path="/pokemons">
+              <div id="pokemon-container">
               <PokemonList offset={this.state.offset}
                            pokemons={this.state.pokemons}
                            getPrev20={this.handleGetPrev20}
                            getNext20={this.handleGetNext20}/>
+              </div>
             </Route>
             <Route exact path="/types">
               <TypeList />

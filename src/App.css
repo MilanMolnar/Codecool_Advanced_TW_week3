@@ -17,6 +17,8 @@ html,body{
     text-align: center;
     height: 40px;
     padding-top: 10px;
+    position: absolute;
+    margin-top: 100px;
 }
 
 #pokemon-list-btn{
@@ -34,10 +36,19 @@ html,body{
         margin-right: 14%;
         width: 150px;
         font-family: 'Pokemon-solid';
+        transition-duration:2s ;
+}
+
+#title-image{
+    width:400px;
+    height: 130px;
+    margin-left: calc(50% - (200px));
+    position: absolute;
 }
 
 #type-list-btn{
         border-color: #296d98;
+        border-width: 1px;
         background-color: #3792cb;
         color: #ffd300;
         font-style: bold;
@@ -48,18 +59,24 @@ html,body{
         display: inline-block;
         border-radius: 6px;
         margin-left: 14%;
-        width: 150px
+        width: 150px;
+        transition-duration:2s ;
 }
 #type-list-btn:hover, #type-list-btn:active {
-    transition-duration:1s ;
+    
     background-color: #296d98;
   }
 
 #pokemon-list-btn:hover, #pokemon-list-btn:active {
-    transition-duration:1s ;
+    
     background-color: #296d98;
 }
 
+#pokemon-container{
+    margin-left: -50px;
+    margin-top: 200px;
+    position: absolute;
+}
 
 /* magic-loading-animation */
 .loader {
@@ -84,4 +101,5 @@ html,body{
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+  
   
