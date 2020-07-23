@@ -11,6 +11,7 @@ class PokemonList extends React.Component {
       <React.Fragment>
         <ul id="poke-ul" style={{textAlign: "center"}}>
           {this.props.pokemons.map(this.mapPokemonToListItem)}
+          
         </ul>
         {prevButton}
         <button id="next-btn" onClick={this.props.getNext20}>Next 8</button>

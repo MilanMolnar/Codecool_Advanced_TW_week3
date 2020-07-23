@@ -3,12 +3,12 @@ import axios from 'axios';
 import './TypeList.css';
 
 class TypeList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      types: []
+    constructor(props) {
+      super(props);
+      this.state = {
+        types: []
+      }
     }
-  }
 
 
   componentDidMount() {
