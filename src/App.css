@@ -22,21 +22,39 @@ html,body{
 }
 
 #pokemon-list-btn{
-    background-color: #3792cb;
-        color: #ffd300;
-        padding: 2px;
-        border-color: #296d98;
-        border-width: 2px;
-        text-align: center;
-        text-decoration: none;
-        font-style: bold;
-        display: inline-block;
-        font-size: 20px;
-        border-radius: 6px;
-        margin-right: 14%;
-        width: 150px;
-        font-family: 'Pokemon-solid';
-        transition-duration:2s ;
+    background-color:#296d98;
+    color: #ffd300;
+    padding: 2px;
+    border-color: black;
+    border-width: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-style: bold;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-right: 14%;
+    width: 150px;
+    font-family: 'Pokemon-solid';
+    transition-duration:2s ;
+}
+
+.active{
+    background-color:red;
+    color: #ffd300;
+    padding: 2px;
+    border-color: black;
+    border-width: 2px;
+    text-align: center;
+    text-decoration: none;
+    font-style: bold;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-right: 14%;
+    width: 150px;
+    font-family: 'Pokemon-solid';
+    transition-duration:2s ;
 }
 
 #title-image{
@@ -47,24 +65,24 @@ html,body{
 }
 
 #type-list-btn{
-        border-color: #296d98;
-        border-width: 1px;
-        background-color: #3792cb;
-        color: #ffd300;
-        font-style: bold;
-        font-family: 'Pokemon-solid';
-        padding: 5px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 6px;
-        margin-left: 14%;
-        width: 150px;
-        transition-duration:2s ;
+    border-color: #296d98;
+    border-width: 1px;
+    background-color: #296d98;
+    color: #ffd300;
+    font-style: bold;
+    font-family: 'Pokemon-solid';
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    margin-left: 14%;
+    width: 150px;
+    transition-duration:2s ;
 }
 #type-list-btn:hover, #type-list-btn:active {
     
-    background-color: #296d98;
+    background-color: #1c4966;
   }
 
 #pokemon-list-btn:hover, #pokemon-list-btn:active {

@@ -6,7 +6,8 @@ import {
   Switch,
   Route,
   Link,
-  Redirect
+  Redirect,
+  withRouter
 } from "react-router-dom";
 import PokemonList from './PokemonList';
 import TypeList from './TypeList';
@@ -36,6 +37,7 @@ class App extends React.Component {
     };
   }
 
+  
   handlePokemonDetailsResponse(responses) {
     this.setState({
       loaded: true,
@@ -76,21 +78,21 @@ class App extends React.Component {
           <nav id="nav-bar">
                 <Link id="pokemon-list-btn" to="/pokemons">Pokemons</Link><Link id="type-list-btn" to="/types">Types</Link>
           </nav>
-          <Switch>
-            <Redirect exact from="/" to="/pokemons" />
-            <Route exact path="/pokemons">
-              <div id="pokemon-container">
-              <PokemonList offset={this.state.offset}
-                           pokemons={this.state.pokemons}
-                           getPrev20={this.handleGetPrev20}
-                           getNext20={this.handleGetNext20}/>
-              </div>
-            </Route>
-            <Route exact path="/types">
-              <TypeList />
-            </Route>
-            <Route path="/pokemons/:id" children={<PokemonDetail pokemons={this.state.pokemons}/>} />
-          </Switch>
+            <Switch>
+              <Redirect exact from="/" to="/pokemons" />
+              <Route exact path="/pokemons">
+                <div id="pokemon-container">
+                <PokemonList offset={this.state.offset}
+                            pokemons={this.state.pokemons}
+                            getPrev20={this.handleGetPrev20}
+                            getNext20={this.handleGetNext20}/>
+                </div>
+              </Route>
+              <Route exact path="/types">
+                <TypeList />
+              </Route>
+              <Route path="/pokemons/:id" children={<PokemonDetail pokemons={this.state.pokemons}/>} />
+            </Switch>
         </Router>
       );
     } else {
