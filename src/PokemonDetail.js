@@ -18,6 +18,7 @@ class PokemonDetail extends React.Component {
     if (this.state.pokemon && this.state.abilities) {
       return (
         <React.Fragment>
+          <div style={{position:'absolute',margin:"200px"}}>
           <h1>Pokemon Details:</h1>
           <img alt="pokemonDetails" src={this.state.pokemon.image_url} />
 
@@ -32,6 +33,7 @@ class PokemonDetail extends React.Component {
               ------
             </React.Fragment>
           ))}
+          </div>
         </React.Fragment>
       );
     }
