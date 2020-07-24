@@ -80,6 +80,23 @@ html,body{
     width: 150px;
     transition-duration:2s ;
 }
+
+#mypokemon-list-btn{
+    border-color: #296d98;
+    border-width: 1px;
+    background-color: #296d98;
+    color: #ffd300;
+    font-style: bold;
+    font-family: 'Pokemon-solid';
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    margin-left: 14%;
+    width: 150px;
+    transition-duration:2s ;
+}
 #type-list-btn:hover, #type-list-btn:active {
     
     background-color: #1c4966;

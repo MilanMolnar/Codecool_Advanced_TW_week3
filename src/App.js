@@ -12,6 +12,7 @@ import {
 import PokemonList from './PokemonList';
 import TypeList from './TypeList';
 import PokemonDetail from './PokemonDetail';
+import Mypokemons from './Mypokemons';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class App extends React.Component {
     this.state = {
       loaded: false,
       offset: 0,
-      pokemons: []
+      pokemons: [],
     }
 
     this.handlePokemonListResponse = this.handlePokemonListResponse.bind(this);
